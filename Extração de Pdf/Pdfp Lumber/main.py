@@ -14,8 +14,9 @@ def extrair_tabelas(pdf_path):
         for pagina in pdf.pages:
             tabelas += pagina.extract_tables()
         return tabelas
+
 if __name__ == "__main__":
-    caminho_pdf = ".\Extração de Pdf\Pdfp Lumber\grandeza.pdf"
+    caminho_pdf = ".\Extração de Pdf\Pdfp Lumber\pdf_nome.pdf"
     
     texto = extrair_texto(caminho_pdf)
     print("\nTexto extraído do PDF:")

@@ -1,8 +1,10 @@
-import pdfplumber
 # Extrai somente o texto de um PDF
+import pdfplumber
+
 def extrair_texto(pdf_path):
     with pdfplumber.open(pdf_path) as pdf:
         texto_completo = ''
+
         for pagina in pdf.pages:
             texto_completo += pagina.extract_text()
         return texto_completo 
