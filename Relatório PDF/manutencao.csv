@@ -1,0 +1,6 @@
+Nome do Cliente,Tipo de Máquina,Defeito,Valor da Manutenção,Serviço Executado
+Carlos Silva,Computador,Não liga,R$180.00,Troca da fonte
+Ana Souza,Notebook,Tela quebrada,R$350.00,Substituição da tela
+Mariana Costa,Notebook,Teclado falhando,R$150.00,Troca do teclado
+Gustavo Ribeiro,Computador,Porta USB defeituosa,R$450.00,Reparo da porta USB
+Diego Santos,Computador,Travamento,R$100.00,Limpeza do Sistema
