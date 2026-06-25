@@ -12,7 +12,6 @@ ERROS:
     Caso o erro persista, desabilite o DevTools.
 ° Vários PDFs em uma pasta só, pode acarretar no download de partes de outros PDFs.
     Para contornar isso, deixe o PDF desejado em apenas uma pasta só, para evitar esse conflito.
-
 ° É normal que o script faça download de imagens brancas, o que aumenta a quantidade de páginas.
     Ex: Pdf de 180 pag, pode ir para 183.
 
