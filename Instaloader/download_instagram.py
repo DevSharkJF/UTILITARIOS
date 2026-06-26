@@ -1,35 +1,31 @@
 import instaloader
 import os
+import time
 
 loader = instaloader.Instaloader(dirname_pattern="Instaloader/{target}")
-# loader = instaloader.Instaloader(
-#     download_comments=False,
-#     download_geotags=False,
-#     download_pictures=False,
-#     download_video_thumbnails=False,
-#     save_metadata=False
-# )
+os.system('cls')
 post_url = input("Informe a URL do Post: ")
 shortcode = post_url.split("/")[-2]
 
 try:
+    print("⏳ Baixando o Conteúdo...")
     loader.download_post(instaloader.Post.from_shortcode(loader.context, shortcode), target= "Download Post")
-    print("Download concluído!")
+    os.system('cls')
+    print("✅ Download concluído ✅\n" 
+        "Verifique a pasta Download Post"
+    )
 except Exception as e:
-    print(f"Erro ao fazer download: {e}")
+    print(f"❌Erro ao fazer download: {e}")
 
 # Outro Método para fazer:
 """
-import instaloader
-import os
-loader = instaloader.Instaloader()
-# loader = instaloader.Instaloader(
-#     download_comments=False,
-#     download_geotags=False,
-#     download_pictures=False,
-#     download_video_thumbnails=False,
-#     save_metadata=False
-# )
+loader = instaloader.Instaloader(
+    download_comments=True,
+    download_geotags=True,
+    download_pictures=True,
+    download_video_thumbnails=True,
+    save_metadata=True,
+)
 post_url = input("Informe a URL do Post: ")
 shortcode = post_url.split("/")[-2]
 
