@@ -1,15 +1,17 @@
 from pytubefix import YouTube
 import time
+import os
 
-#Adicione a URL do vídeo dentro das aspas:
-link = ""
+os.system('cls')
+link = input("🔗 Digite o link do Vídeo: ")
 yt = YouTube(link)
 
 destino = "./Download Audio/Áudios Baixados"
 audio = yt.streams.filter(only_audio=True, mime_type="audio/mp4").first()
 
-print(f"Baixando áudio: {audio.title}")
+print(f"⌛ Baixando áudio: {audio.title}")
 audio_file = audio.download(filename=f"{audio.title}audio.mp4", output_path=destino)
 
 time.sleep(1.5)
-print("Download Concluído!")
+os.system('cls')
+print("✅ Download Concluído")
