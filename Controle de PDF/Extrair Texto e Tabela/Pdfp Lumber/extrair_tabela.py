@@ -10,7 +10,7 @@ def extrair_tabelas(pdf_path):
         return tabelas
 
 if __name__ == "__main__":
-    caminho_pdf = ".\Extração de Pdf\Pdfp Lumber\pdf_nome.pdf"
+    caminho_pdf = ".\Extrair Texto e Tabela\Pdfp Lumber\pdf_nome.pdf"
     tabelas = extrair_tabelas(caminho_pdf)
     print("\nTabelas extraídas do PDF:")
 

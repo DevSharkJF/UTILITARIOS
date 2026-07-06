@@ -9,5 +9,5 @@ def ler_pdf(caminho_pdf: str) -> str:
         texto += pagina.extract_text().strip() or ""
     return texto
 
-conteudo = ler_pdf(".\Extração de Pdf\pdf_nome.pdf")
+conteudo = ler_pdf(".\Extrair Texto e Tabela\pdf_nome.pdf")
 print(conteudo)
