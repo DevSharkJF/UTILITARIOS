@@ -1,21 +1,24 @@
-# from pytubefix import YouTube
-# from pytubefix.cli import on_progress
-# import time
-# import os
+# Código funciona, porém o arquivo do vídeo fica com resolução baixa
+from pytubefix import YouTube
+from pytubefix.cli import on_progress
+import time
+import os
 
-# url = input("🔗 Digite o link do Vídeo: ")
-# destino = "./Download Video/Vídeos Baixados"
+url = input("🔗 Digite o link do Vídeo: ")
+destino = "./Download Video/Vídeos Baixados"
 
-# yt = YouTube(url, on_progress_callback= on_progress)
-# print(f"⌛ Baixando vídeo: {yt.title}")
+yt = YouTube(url, on_progress_callback= on_progress)
+print(f"⌛ Baixando vídeo: {yt.title}")
 
-# ys = yt.streams.get_highest_resolution()
-# ys.download(output_path=destino)
+ys = yt.streams.get_highest_resolution()
+ys.download(output_path=destino)
 
-# time.sleep(1.5)
-# os.system('cls')
-# print("✅ Download Concluído")
+time.sleep(1.5)
+os.system('cls')
+print("✅ Download Concluído")
 
+
+# Código Funciona, porém o arquivo do vídeo não está abrindo
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
 import time
