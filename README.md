@@ -1,7 +1,11 @@
+<center>
+
 # UTILITÁRIOS
 Alguns códigos que foram usados para aprimoramento de conhecimento e para fins educacionais.
 
 **OBS:** Sempre verifique e altere os caminhos do diretório, para evitar erros.
+</center>
+<br>
 
 # Controle de PDF
 Opções de extração, download e geração de PDF's.
@@ -46,7 +50,7 @@ Instalação da Biblioteca:
 Link de documentação:
     https://pypdf.readthedocs.io/en/stable/
 
-# Download de PDF
+## Download de PDF
 Faz o download de um PDF que está bloqueado ou em um determinado site
 
 **Download de PDF:**
@@ -67,3 +71,31 @@ Faz o download de um PDF que está bloqueado ou em um determinado site
 
 * É normal que o script faça download de imagens brancas, o que aumenta a quantidade de páginas.<br>
     Ex: Pdf de 180 pag, pode ir para 183.
+
+## Gerar Documento
+Cria um documento PDF, podendo alterar fonte, tamanho, formato entre outros.
+
+No código foi desenvolvido um código que gera um recibo como exemplo.
+
+Instalação da Biblioteca:
+
+    pip install fpdf2 
+
+Link de Documentação:
+
+    https://py-pdf.github.io/fpdf2/Tutorial-pt.html
+
+## Gerar Relatório
+Captura os dados contidos no arquivo `manutencao.csv`, e gera um arquivo PDF individual baseado no conteúdo captado. 
+No código foi usado um serviço de manutenção como exemplo.
+
+Instalação das Bibliotecas:
+
+    pip install pandas
+    pip install reportlab
+
+Links de Download e Documentação:
+* https://pypi.org/project/reportlab/
+* https://pypi.org/project/pandas/
+
+# Instaloader
