@@ -97,5 +97,35 @@ Instalação das Bibliotecas:
 Links de Download e Documentação:
 * https://pypi.org/project/reportlab/
 * https://pypi.org/project/pandas/
+<hr>
+
+# Ligações
+Efetua ligações para outros números utilizando python
+
+Instalação da Biblioteca:
+
+    pip install twilio
+
+É necessário criar uma conta no `twilio`:
+
+    https://login.twilio.com/u/signup?state=hKFo2SBpd0hwS2Y0VnBGUm9Od3VwclFUcWljSzVGa181TmtlQaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFJYS3liS183NjB3LUNRTDhzOWRtaTluSVBQdGwwWlUzo2NpZNkgTW05M1lTTDVSclpmNzdobUlKZFI3QktZYjZPOXV1cks
+
+Após criar a conta será possível obter o número do `sid`, ``token`` e ``número twilio.
+
+Verifique o número de telefone para começar a usar, sendo liberado ligação gratuita para o número cadastrado, porém para outros números será necessário pagar.
+
+A plataforma também libera para compra, diferentes tipos de números.
+<hr>
 
 # Instaloader
+O primeiro bloco de código, faz download geral do conteúdo na URL (foto, vídeo, thumb, legena).
+
+O segundo bloco de código possui parâmetros de download, podendo adicionar o valor **FALSE** nos atributos que não deseja baixar.
+
+Instalação da Biblioteca:
+
+    pip install instaloader
+
+Link da Documentação:
+* https://instaloader.github.io
+<hr>

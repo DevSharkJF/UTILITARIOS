@@ -1,8 +1,11 @@
+from pathlib import Path
 import pandas as pd
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4 
 
-tabela = pd.read_csv("manutencao.csv")
+caminho = Path(__file__).resolve().parent
+caminho_csv = caminho / "manutencao.csv"
+tabela = pd.read_csv(caminho_csv)
 
 for linha in tabela.index:
     nome = tabela.loc[linha, "Nome do Cliente"]
@@ -11,7 +14,7 @@ for linha in tabela.index:
     valor = tabela.loc[linha, "Valor da Manutenção"]
     servico = tabela.loc[linha, "Serviço Executado"]
 
-    documento_pdf = canvas.Canvas(f"relatório de Horas {nome}.pdf", A4)
+    documento_pdf = canvas.Canvas(str(caminho / f"Relatório de Manutenção - {nome}.pdf"), A4)
 
     documento_pdf.setFont("Helvetica-Bold", 18)
     documento_pdf.drawString(100, 750, "Relatório de Manutenção de Computadores")
