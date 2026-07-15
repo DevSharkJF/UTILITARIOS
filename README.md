@@ -99,6 +99,19 @@ Links de Download e Documentação:
 * https://pypi.org/project/pandas/
 <hr>
 
+# Instaloader
+O primeiro bloco de código, faz download geral do conteúdo na URL (foto, vídeo, thumb, legena).
+
+O segundo bloco de código possui parâmetros de download, podendo adicionar o valor **FALSE** nos atributos que não deseja baixar.
+
+Instalação da Biblioteca:
+
+    pip install instaloader
+
+Link da Documentação:
+* https://instaloader.github.io
+<hr>
+
 # Ligações
 Efetua ligações para outros números utilizando python
 
@@ -117,15 +130,4 @@ Verifique o número de telefone para começar a usar, sendo liberado ligação g
 A plataforma também libera para compra, diferentes tipos de números.
 <hr>
 
-# Instaloader
-O primeiro bloco de código, faz download geral do conteúdo na URL (foto, vídeo, thumb, legena).
-
-O segundo bloco de código possui parâmetros de download, podendo adicionar o valor **FALSE** nos atributos que não deseja baixar.
-
-Instalação da Biblioteca:
-
-    pip install instaloader
-
-Link da Documentação:
-* https://instaloader.github.io
-<hr>
+# PyTube
