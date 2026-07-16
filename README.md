@@ -131,3 +131,17 @@ A plataforma também libera para compra, diferentes tipos de números.
 <hr>
 
 # PyTube
+
+# QRCode
+Cria QRCODE personalizado
+
+Instala das Bibliotecas:
+
+    pip install qrcode
+    pip install pillow
+
+Link da Documentação: 
+* https://pypi.org/project/qrcode/
+
+``Obs:`` Para gerar um novo png, é necessário apagar o atual
+<hr>
