@@ -3,7 +3,7 @@ from tqdm import tqdm
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-VIDEO_PATH = str(SCRIPT_DIR / "teste.mp4")
+VIDEO_PATH = str(SCRIPT_DIR / "arquivo.extensao")
 OUTPUT_TXT = str(SCRIPT_DIR / "transcricao.txt")
 MODEL_NAME = "base"
 

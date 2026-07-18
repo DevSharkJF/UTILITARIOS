@@ -186,6 +186,19 @@ DOCUMENTAÇÃO:
 <hr>
 
 # Transcrever Áudio
-Transcreve o áudio de um vídeo ou de arquivo mp4, detectando o tipo de linguagem automaticamente.
+Transcreve o áudio de um vídeo ou de arquivo, que esteja na pasta "Transcrever Áudio" para o terminal.
 
-**Opções de Modelo**: Quanto melhor for a opção do modelo, maior será o consumo da GPU.
+Detecta qual automaticamente a linguagem do audio e transcreve em texto para a mesma linguagem
+
+**Opções de Modelo**
+* ``tiny``
+* ``base``
+* ``small``
+* ``medium``
+* ``large``
+
+Quanto melhor for a opção do modelo, maior será o consumo da GPU.
+
+**Modificando**
+* VIDEO_PATH = Adiciona o nome do arquivo que contém o áudio 
+* MODEL_NAME = Tipo do modelo que será usado, pode ser alterado com base nas `Opções de Modelo`.
