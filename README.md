@@ -181,7 +181,11 @@ Bibliotecas e suas versões necessárias:
     wsproto==1.2.0
 
 DOCUMENTAÇÃO:
-
 * Selenium:  https://selenium-python.readthedocs.io
 * Webdriver Manager: https://pypi.org/project/webdriver-manager/
 <hr>
+
+# Transcrever Áudio
+Transcreve o áudio de um vídeo ou de arquivo mp4, detectando o tipo de linguagem automaticamente.
+
+**Opções de Modelo**: Quanto melhor for a opção do modelo, maior será o consumo da GPU.
