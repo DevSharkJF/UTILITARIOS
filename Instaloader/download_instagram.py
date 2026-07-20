@@ -15,7 +15,7 @@ try:
         "Verifique a pasta Download Post"
     )
 except Exception as e:
-    print(f"❌Erro ao fazer download: {e}")
+    print(f"❌ Erro ao fazer download: {e}")
 
 # Outro Método para fazer:
 """

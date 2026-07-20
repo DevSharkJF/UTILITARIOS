@@ -110,6 +110,25 @@ Instalação da Biblioteca:
 
 Link da Documentação:
 * https://instaloader.github.io
+
+## InstaScrape
+Instalação da Biblioteca:
+
+    pip install instascrape
+
+Links das Documentações:
+* https://github.com/chris-greening/instascrape
+* https://chris-greening.github.io/instascrape/
+
+Faz o download do Rell, mas pode ser bloqueado caso tenha repetidas solicitações. Por conta disso, é necessário passar o session ID, devido às novas políticas do Instagram.
+
+O SessionID muda sempre que a sessão é encerrada, por isso é importante fornecer o ID no momento em que estiver conectado.
+
+O formato f-string é uma forma de inserir expressões Python dentro de Strings para formatação.
+
+Para acessar o SESSION ID é necessário abrir o instagram no navegador, clicar com o botão direito do mouse na página e selecionar "Inspecionar" (ou pressionar F12). 
+Em seguida, vá para a aba "Application" (Aplicativo), depois em "Storage" (Armazenamento) e clique em "Cookies" ou em "Armazenamento de Sessão"
+Lá você encontrará o cookie chamado "sessionid", que é o valor que você precisa copiar e colar no código acima.
 <hr>
 
 # Ligações
