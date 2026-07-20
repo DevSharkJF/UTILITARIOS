@@ -186,7 +186,7 @@ DOCUMENTAÇÃO:
 <hr>
 
 # Transcrever Áudio
-Transcreve o áudio de um vídeo ou de arquivo, que esteja na pasta "Transcrever Áudio" para o terminal.
+Transcreve o áudio de um vídeo ou de arquivo, que esteja na pasta "Transcrever Áudio". Há primeira parte, mostra a transcrição completa no terminal, a segunda salva em um arquivo TXT separando as frases por segundo, e a terceira salva todo o texto completo em arquivo TXT.
 
 Detecta qual automaticamente a linguagem do audio e transcreve em texto para a mesma linguagem
 
