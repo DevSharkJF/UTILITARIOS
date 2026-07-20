@@ -3,7 +3,7 @@ from tqdm import tqdm
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-VIDEO_PATH = str(SCRIPT_DIR / "teste.mp4")
+VIDEO_PATH = str(SCRIPT_DIR / "arquivo.extensao")
 OUTPUT_TXT = str(SCRIPT_DIR / "transcricao.txt")
 MODEL_NAME = "base"
 
@@ -19,8 +19,8 @@ result = model.transcribe(
 )
 
 # Transcrição Completa pelo Terminal
-# print("\n [TRANSCRIÇÃO COMPLETA]\n")
-# print(result["text"])
+print("\n [TRANSCRIÇÃO COMPLETA]\n")
+print(result["text"])
 
 # Transcrição Completa por partes e salvando em um arquivo TXT
 with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
@@ -30,3 +30,8 @@ with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
         text = seg["text"].strip()
         f.write(f"[{start:.2f} --> {end:.2f}] {text}\n")
         print(f"\n[INFO] Transcrição salva em '{OUTPUT_TXT}'")
+
+# Transcrição Completa salvando em um arquivo TXT o texto completo
+with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
+    f.write(result["text"])
+print(f"[INFO] Transcrição salva em '{OUTPUT_TXT}'")
