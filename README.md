@@ -126,9 +126,9 @@ O SessionID muda sempre que a sessão é encerrada, por isso é importante forne
 
 O formato f-string é uma forma de inserir expressões Python dentro de Strings para formatação.
 
-Para acessar o SESSION ID é necessário abrir o instagram no navegador, clicar com o botão direito do mouse na página e selecionar "Inspecionar" (ou pressionar F12). 
-Em seguida, vá para a aba "Application" (Aplicativo), depois em "Storage" (Armazenamento) e clique em "Cookies" ou em "Armazenamento de Sessão"
-Lá você encontrará o cookie chamado "sessionid", que é o valor que você precisa copiar e colar no código acima.
+Para acessar o ``SESSION ID`` é necessário abrir o instagram no navegador, clicar com o botão direito do mouse na página e selecionar **Inspecionar** (ou pressionar F12). 
+Em seguida, vá para a aba **Application** (*Aplicativo*), depois em **Storage** (*Armazenamento*) e clique em **Cookies** ou em **Armazenamento de Sessão**
+Lá você encontrará o cookie chamado ``sessionid``, que é o valor que você precisa copiar e colar no código acima.
 <hr>
 
 # Ligações
