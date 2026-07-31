@@ -221,3 +221,17 @@ Quanto melhor for a opção do modelo, maior será o consumo da GPU.
 **Modificando**
 * VIDEO_PATH = Adiciona o nome do arquivo que contém o áudio 
 * MODEL_NAME = Tipo do modelo que será usado, pode ser alterado com base nas `Opções de Modelo`.
+
+## Interface
+Transcrição de áudio com uma tela de Interface, para quem não queira usar no terminal.
+
+Siga o passo a passo para que o código funcione:
+* Instalar o openai-whisper
+* Instalar ffmpeg: www.geeksforgeeks.org/how-to-install-ffmpeg-o-windows/
+* Acessar: github.com//openai/whisper
+* https://openai.com/pt-BR/index/whisper/
+* https://streamlit.io
+
+    pip install streamlit
+
+Mova o vídeo para a pasta para que possa ser feito a transcrição
