@@ -34,7 +34,35 @@ Quando o ambiente for ativado, o terminal ficará com aparência:
 
 O (.venv) indica que tudo que for instalado ficará somente o ambiente do projeto.
 
-<br>
+## Erro
+É comum acontecer Erros no ``PoweShell`` do Windows, acontece porque a política de segurança do ``PoweShell`` impede a execução de scripts. Para contornar essa situação, é possível usar 2 opções:
+
+### Opção 1: Alterar Política Permanentemente
+Altera a permissão de uso de scripts de forma permanentemente.
+
+    Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+Após isso, irá aparecer a mensagem:
+
+    Do you want to change the execution policy?
+
+    [Y] Yes
+
+    [N] No
+
+Execute o script: ``.venv\Scripts\Activate.ps1``
+
+Retorna: ``(.venv) PS C:\Users\...``
+
+### Opção 2: Alterar Política Sessão
+Altera a permissão de uso de scripts de enquanto estiver em uma sessão
+
+    Set-ExecutionPolicy -Scope Process Bypass
+
+Execute o script: ``.venv\Scripts\Activate.ps1``
+
+Essa alteração vale somente para a janela atual. Ao fechar o PowerShell, tudo volta ao padrão.
+<hr>
 
 # Controle de PDF
 Opções de extração, download e geração de PDF's.
