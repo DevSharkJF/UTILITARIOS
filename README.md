@@ -7,6 +7,35 @@ Alguns códigos que foram usados para aprimoramento de conhecimento e para fins 
 </center>
 <br>
 
+# Ambiente Virtual
+Um ambiente virtual (Virtual Environment) é um ambiente isolado criado para um projeto, ele não instala os pacotes direto na máquina, o que não interfere em outros projetos.
+
+Dentro dele, é possível instalar as bibliotecas, dependências e versões específicas que um projeto necessita.
+
+Para criar um ambiente virtual, siga o passo a passo abaixo:
+
+### Crie um ambiente virtual
+
+    python -m venv .venv
+ou
+
+    py -m venv.venv
+
+### Ative o ambiente virtual
+
+    .venv\Scripts\activate.bat
+ou
+
+    .venv\Scripts\Activate.ps1
+
+Quando o ambiente for ativado, o terminal ficará com aparência:
+
+``(.venv) C:\Projetos\MeuProjeto>``
+
+O (.venv) indica que tudo que for instalado ficará somente o ambiente do projeto.
+
+<br>
+
 # Controle de PDF
 Opções de extração, download e geração de PDF's.
 
