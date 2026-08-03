@@ -295,7 +295,7 @@ Mova o vídeo para a pasta para que possa ser feito a transcrição
 <hr>
 
 # Remover Fundo
-Remove o fundo de uma foto.
+Remove o fundo de uma foto. O novo arquivo deve ter a extensão `png`.
 
 Instalação da Biblioteca:
 
