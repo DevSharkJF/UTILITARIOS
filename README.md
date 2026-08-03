@@ -292,3 +292,11 @@ Siga o passo a passo para que o código funcione:
     pip install streamlit
 
 Mova o vídeo para a pasta para que possa ser feito a transcrição
+<hr>
+
+# Remover Fundo
+Remove o fundo de uma foto.
+
+Instalação da Biblioteca:
+
+    pip install rembg
