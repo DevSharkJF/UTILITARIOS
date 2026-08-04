@@ -9,18 +9,35 @@ MODEL_NAME = "base"
 
 model = whisper.load_model(MODEL_NAME)
 
-print(f"Transcrevendo {VIDEO_PATH} com o modelo {MODEL_NAME}... \n")
+print(
+    "\n"
+    "------------------------------------------------------------------------ INICIANDO A TRANSCRIÇÃO ------------------------------------------------------------------------"
+)
+print(
+    f"📝 Transcrevendo {VIDEO_PATH}"
+    f"\n🤖 Utilizando o Modelo: {MODEL_NAME}"
+)
 
+print(
+    "\n"
+    "------------------------------------------------------------------------ TRANSCRIÇÃO POR PARTES ------------------------------------------------------------------------"
+)
 result = model.transcribe(
     VIDEO_PATH, 
     verbose=True,
     fp16=False, 
     word_timestamps=False
 )
+print(
+    "✅ TRANSCRIÇÃO POR PARTES CONCLUÍDA ✅"
+)
 
 # Transcrição Completa pelo Terminal
-print("\n [TRANSCRIÇÃO COMPLETA]\n")
-print(result["text"])
+print(
+    "\n" 
+    "------------------------------------------------------------------------ TRANSCRIÇÃO COMPLETA ------------------------------------------------------------------------"
+)
+print(result["text"], "\n")
 
 # Transcrição Completa por partes e salvando em um arquivo TXT
 with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
@@ -29,9 +46,14 @@ with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
         end = seg["end"]
         text = seg["text"].strip()
         f.write(f"[{start:.2f} --> {end:.2f}] {text}\n")
-        print(f"\n[INFO] Transcrição salva em '{OUTPUT_TXT}'")
 
-# Transcrição Completa salvando em um arquivo TXT o texto completo
-with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
-    f.write(result["text"])
-print(f"[INFO] Transcrição salva em '{OUTPUT_TXT}'")
+# print(f"\n[INFO] Transcrição salva em '{OUTPUT_TXT}'\n")
+print(
+    f"💾 A TRANSCRIÇÃO FOI SALVA NO CAMINHO: '{OUTPUT_TXT}'"
+    "\n"
+)
+
+# # Transcrição Completa salvando em um arquivo TXT o texto completo
+# with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
+#     f.write(result["text"])
+# print(f"\n[INFO] Transcrição salva em '{OUTPUT_TXT}'\n")
