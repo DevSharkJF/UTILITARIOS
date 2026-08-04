@@ -10,7 +10,7 @@ uploaded_file = st.file_uploader(
 )
 
 st.sidebar.title("Opções de Transcrição")
-timestamp_option = st.sidebar._selectbox(
+timestamp_option = st.sidebar.selectbox(
     "Exibir timestamps na transcrição?",
     ["Sim", "Não"]
 )
@@ -22,7 +22,7 @@ model_name = st.sidebar.selectbox(
     index=2
 )
 
-language = st.sidebar._selectbox(
+language = st.sidebar.selectbox(
     "Idioma do áudio",
     ["auto", "pt", "en", "es", "fr", "de"],
     index=0,
