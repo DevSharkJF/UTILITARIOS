@@ -64,6 +64,21 @@ Execute o script: ``.venv\Scripts\Activate.ps1``
 Essa alteração vale somente para a janela atual. Ao fechar o PowerShell, tudo volta ao padrão.
 <hr>
 
+# Uninstall
+Para desinstalar os pacotes que estão na máquina, crie um arquivo de texto com a lista das bibliotecas com o comando:
+
+    pip freeze > req.txt
+
+Remova do arquivo as bibliotecas que deseja manter, deixe somente as que serão apagadas, utilizando:
+
+    pip freeze > req.txt
+
+Para executar o comando para remoção em massa, use:
+
+    pip uninstall -r req.txt -y
+
+<hr>
+
 # Controle de PDF
 Opções de extração, download e geração de PDF's.
 
