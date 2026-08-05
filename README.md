@@ -76,7 +76,6 @@ Remova do arquivo as bibliotecas que deseja manter, deixe somente as que serão 
 Para executar o comando para remoção em massa, use:
 
     pip uninstall -r req.txt -y
-
 <hr>
 
 # Controle de PDF

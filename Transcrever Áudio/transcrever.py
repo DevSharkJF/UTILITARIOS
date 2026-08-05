@@ -53,7 +53,10 @@ print(
     "\n"
 )
 
-# # Transcrição Completa salvando em um arquivo TXT o texto completo
-# with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
-#     f.write(result["text"])
-# print(f"\n[INFO] Transcrição salva em '{OUTPUT_TXT}'\n")
+# Transcrição Completa salvando em um arquivo TXT o texto completo
+with open(OUTPUT_TXT, "w", encoding="utf-8") as f:
+    f.write(result["text"])
+print(
+    f"💾 A TRANSCRIÇÃO FOI SALVA NO CAMINHO: '{OUTPUT_TXT}'"
+    "\n"
+)
